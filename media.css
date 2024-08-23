@@ -1,0 +1,126 @@
+
+/* Tablet  navbar*/
+@media (max-width:768px){
+    
+#newletter .form{
+    display: flex;
+    width: 100%;
+}
+
+    
+header .icons i {
+    padding: 0 3px;
+    cursor: pointer;
+    border: none;
+}
+   header .navbar {
+        display: none;
+        background: #1743e3;
+        margin-top: 70px;
+        text-align: center;
+        border-radius: 0px 0px 90px 0px;
+        width:220px;
+        z-index: 999;
+    }
+    header .navbar li{ 
+        padding: 20px;
+    }
+
+    #navbar li a::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #fff;
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    
+    #navbar li a:hover::after{
+        width: 70%;
+    } 
+    #navbar li a.active,
+    #navbar li a:hover{
+       color: #fff;
+    }
+    header .navbar-toggle{
+        display: block;
+    }
+}
+
+@media (max-width:450px){
+    .section-two .car .foto img{
+        display: none; 
+    }
+}
+
+/* Tablet  section-two*/
+@media (max-width:768px){
+    .section-two .text{
+        padding: 30px 0 0 10px;
+    }
+    .section-two .text{
+        padding: 30px 0 0 10px;
+    }
+    .section-two{
+        overflow:-moz-hidden-unscrollable;
+        display: block;
+        width: 100%;
+    }
+    .section-two .car .foto img{
+        top: auto;
+        left: -30px;
+        width:100%;
+    }
+    .section-two .car .foto{
+         border: none;
+        box-shadow: none; 
+       
+    }
+    .section-two .foto-2{
+        display: none;
+    }
+}
+
+/* desktop */
+@media (main-width:1024px){
+
+}
+
+/* shop cart */
+@media (max-width:522px){
+    #product1 .pro {
+        width: 100%;
+        margin: 15px;
+    }
+    #product1 .pro-container {
+        justify-content:center;
+    }
+}
+
+
+
+/* ////////////////// */
+/* contact */
+@media (max-width:768px){
+     /* contact page */
+     #contact-details {
+        flex-direction: column;
+    }
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .map {
+        width: 100%;
+    }
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
